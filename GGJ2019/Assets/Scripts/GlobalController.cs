@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GlobalController : MonoBehaviour
 {
+    //[SerializeField]
     Canvas MenuCanvas;
 
 
@@ -11,6 +12,7 @@ public class GlobalController : MonoBehaviour
     void Start()
     {
         MenuCanvas = GameObject.Find("MenuCanvas").GetComponent<Canvas>();
+        MenuCanvas.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
